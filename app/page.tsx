@@ -6,13 +6,13 @@ export default function Page() {
   return (
     <div className="w-screen h-screen flex overflow-hidden">
       {/* Left Sidebar */}
-      <div className="w-1/4 h-screen flex flex-col p-6 bg-orange-500 gap-20 text-white">
+      <div className="w-1/5 h-screen flex flex-col p-6 bg-orange-500 gap-20 text-white">
         <div className="flex flex-col items-center gap-10">
           <img src="hatsune.jpg" alt="pfp" width={200} height={200} className="rounded-full" />
           <div>
             <h1 className="text-center text-5xl font-thin">JESSICA CHEN</h1>
           </div>
-          <div className="text-[17px]">
+          <div className="text-[16px]">
             <p>
               Hi, I'm Jessica, a recent Computer Science graduate from Hunter College with a minor in Mathematics.
               I'm passionate about full-stack web development and machine learning, and I enjoy building applications

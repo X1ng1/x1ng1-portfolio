@@ -3,7 +3,7 @@ export const projects = [
         title: "Manga Translation Extension",
         date: "Jun 2026 - Present",
         tech: "Chrome Extension API, Javascript, Python, Hugging Face",
-        image: "manglify.png",
+        image: "extension.png",
         link: "https://github.com/X1ng1/Manga-Translator-Extension",
         description: `Manga Translation Extension is a Chrome extension with a
         FastAPI backend that uses OCR and machine translation to translate Japanese manga
@@ -91,25 +91,25 @@ export const projects = [
         description: ` FaceOff is a PyTorch-based Siamese neural network using triplet loss to
         improve facial recognition feature consistency across altered and unaltered faces with makeup`,
         responsibilities: [
-            "Implemented semantic search with vector embeddings.",
-            "Designed React UI components.",
-            "Integrated backend APIs.",
-            "Participated in Agile development with CI/CD."
+            `Designed and trained a Siamese neural network in PyTorch using triplet loss to learn 
+            feature embeddings that preserve identity across make-up related appearance changes.`,
+            `Evaluated model performance using validation metrics such as accuracy, precision, recall,
+            and threshold optimization`,
         ]
     },
     {
         title: "Wanderer",
         date: "Feb 2024",
-        tech: "Python, PyTorch, OpenCV, Matplotlib, torchvision, NumPy, Pillow",
+        tech: "React, Firebase, Google Maps API",
         image: "wanderer.png",
         link: "https://github.com/TonyLiu2004/HackCUNY",
-        description: ` FaceOff is a PyTorch-based Siamese neural network using triplet loss to
-        improve facial recognition feature consistency across altered and unaltered faces with makeup`,
+        description: `Wanderer is a platform that allows users to discover and post events easily,
+        solving the problem of finding local events or posting their own.`,
         responsibilities: [
-            "Implemented semantic search with vector embeddings.",
-            "Designed React UI components.",
-            "Integrated backend APIs.",
-            "Participated in Agile development with CI/CD."
+            ``,
+            `Evaluated model performance using validation metrics such as accuracy, precision, recall,
+            and threshold optimization`,
+            
         ]
     },
 ]
