@@ -54,6 +54,7 @@ export default function Page() {
                 tech={project.tech}
                 image={project.image}
                 link={project.link}
+                demoLink={project.demoLink}
                 description={project.description}
                 responsibilities={project.responsibilities}
                 reversed={index % 2 === 1}

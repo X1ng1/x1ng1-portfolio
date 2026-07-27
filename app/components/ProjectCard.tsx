@@ -3,6 +3,7 @@ import { IoMdArrowDropright } from "react-icons/io";
 interface ProjectCardProps {
     image: string;
     link: string;
+    demoLink?: string;
     title: string;
     description: string;
     date: string;
@@ -11,7 +12,7 @@ interface ProjectCardProps {
     responsibilities: string[];
 }
 
-export default function ProjectCard({title, tech, date, image, link, description, responsibilities, reversed}: ProjectCardProps) {
+export default function ProjectCard({title, tech, date, image, link, demoLink, description, responsibilities, reversed}: ProjectCardProps) {
     return (
         <div className={`flex items-center gap-10 ${reversed ? "flex-row-reverse" : "" }`}>
             <div className="relative inline-block flex-shrink-0 pt-15 pl-18">
@@ -35,7 +36,12 @@ export default function ProjectCard({title, tech, date, image, link, description
                         <li key={index}>{item}</li>
                     ))}
                 </ul>
-                <a href={link} className="flex text-xl font-semibold gap-2 items-center"> Learn More <IoMdArrowDropright /> </a>
+                <div className="flex flex-col items-start gap-2">
+                    <a href={link} className="flex text-xl font-semibold gap-2 items-center"> Learn More <IoMdArrowDropright /> </a>
+                    {demoLink && (
+                        <a href={demoLink} className="flex text-xl font-semibold gap-2 items-center"> Watch Demo <IoMdArrowDropright /> </a>
+                    )}
+                </div>
             </div>
         </div>
     );

@@ -12,8 +12,8 @@ export const projects = [
             `Architected a Python-based ML pipeline integrating Hugging Face models for Japanese
             text detection, OCR, and machine translation, enabling automated English translations
             of manga panels.`,
-            "Integrated backend APIs.",
-            "Participated in Agile development with CI/CD."
+            `Integrated a FastAPI backend with a Chrome extension to overlay translations directly 
+            onto manga pages while preserving the original layout.`
         ]
     },
     {
@@ -27,9 +27,11 @@ export const projects = [
         receive AI-generated translations, and read translated pages
         through a modern React Native interface.`,
         responsibilities: [
-            "Designed React UI components.",
-            "Integrated backend APIs.",
-            "Participated in Agile development with CI/CD."
+            `Designed UI wireframes to establish application layouts and user flows.`,
+            `Refactored the frontend into reusable components, improving code maintainability
+             and reducing duplication.`,
+            `Developed responsive interfaces that adapt seamlessly across mobile and desktop screen 
+            sizes.`
         ]
     },
     {
@@ -56,6 +58,7 @@ export const projects = [
         tech: "React, Express.js, MongoDB, Hugging Face",
         image: "memo.png",
         link: "https://github.com/X1ng1/memo",
+        demoLink: "https://memo-x1ng1.vercel.app/",
         description: `Developed a full-stack digital journaling web application designed to 
         help users track daily emotions and reflect on their experiences through an interactive
         calendar interface for creating, editing, and organizing journal entries`,
@@ -76,10 +79,12 @@ export const projects = [
         description: `Stellar Search goes beyond standard keyword-based filtering used by Slack 
         and Discord, allowing users to search for message history through context clustering.`,
         responsibilities: [
-            "Implemented semantic search with vector embeddings.",
-            "Designed React UI components.",
-            "Integrated backend APIs.",
-            "Participated in Agile development with CI/CD."
+            `Designed and implemented a database schema for storing user accounts and clustered
+            message data.`,
+            `Integrated authentication and data collection workflows for Slack and Discord so the
+            system can work with real workspace data.`,
+            `Deployed the backend and established CI/CD workflows to automate testing and 
+            application delivery.`
         ]
     },
     {
@@ -94,7 +99,8 @@ export const projects = [
             `Designed and trained a Siamese neural network in PyTorch using triplet loss to learn 
             feature embeddings that preserve identity across make-up related appearance changes.`,
             `Evaluated model performance using validation metrics such as accuracy, precision, recall,
-            and threshold optimization`,
+            and threshold optimization.`,
+            `Achieved 91.67% accuracy on facial recognition across 100+ faces with and without makeup.`
         ]
     },
     {
@@ -103,13 +109,13 @@ export const projects = [
         tech: "React, Firebase, Google Maps API",
         image: "wanderer.png",
         link: "https://github.com/TonyLiu2004/HackCUNY",
+        demoLink: "https://youtu.be/5Oi8-iwMTAs",
         description: `Wanderer is a platform that allows users to discover and post events easily,
         solving the problem of finding local events or posting their own.`,
         responsibilities: [
-            ``,
-            `Evaluated model performance using validation metrics such as accuracy, precision, recall,
-            and threshold optimization`,
-            
+            `Collaborated with a four-person team to design and deliver a functional prototype
+            within a two-day hackathon.`,
+            `Designed and implemented responsive UI components with React.`,
         ]
     },
 ]
