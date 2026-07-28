@@ -65,6 +65,7 @@ export const projects = [
         responsibilities: [
             `Integrated HuggingFace ML model to automatically classify journal entries into 7
             emotion categories with real-time sentiment analysis.`,
+            ``,
             `Led backend development by designing normalized SQL schemas for calendar and event 
             entities, building REST APIs in Express, and implementing secure authentication using
             JWT and bcrypt.`

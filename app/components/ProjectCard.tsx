@@ -19,7 +19,7 @@ export default function ProjectCard({title, tech, date, image, link, demoLink, d
                 <div className="absolute top-0 left-0 w-9/10 h-9/10 bg-orange-500" />
                 <img
                     src={image}
-                    className="relative h-[480px] w-auto max-w-[720px]"
+                    className="relative h-[480px] w-auto max-w-[720px] transition-transform duration-300 hover:-translate-y-2 hover:scale-105"
                 />
             </div>
             <div className="flex flex-col gap-7">
