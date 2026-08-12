@@ -14,32 +14,40 @@ interface ProjectCardProps {
 
 export default function ProjectCard({title, tech, date, image, link, demoLink, description, responsibilities, reversed}: ProjectCardProps) {
     return (
-        <div className={`flex items-center gap-10 ${reversed ? "flex-row-reverse" : "" }`}>
-            <div className="relative inline-block flex-shrink-0 pt-15 pl-18">
-                <div className="absolute top-0 left-0 w-9/10 h-9/10 bg-orange-500" />
+        <div
+            className={`flex flex-col gap-15 lg:flex-row lg:items-start ${
+                reversed ? "lg:flex-row-reverse" : ""
+            }`}
+        >
+            <div className="relative w-full md:w-[75%] md:self-center lg:w-[45%] lg:self-auto">
+                {/* Blue square behind image */}
+                <div className="absolute top-4 left-4 w-full h-full rounded-3xl bg-blue-500" />
+
+                {/* Project image */}
                 <img
                     src={image}
-                    className="relative h-[480px] w-auto max-w-[720px] transition-transform duration-300 hover:-translate-y-2 hover:scale-105"
+                    alt={title}
+                    className="relative z-10 w-full rounded-3xl object-cover transition-transform duration-300 hover:-translate-y-2 hover:scale-105"
                 />
             </div>
-            <div className="flex flex-col gap-7">
+            <div className="flex w-full flex-col gap-6 lg:w-[55%]">
                 <div className="flex flex-col gap-1">
-                    <h1 className="text-2xl font-bold">{title}</h1>
-                    <p className="text-lg text-gray-500">{date}</p>
+                    <h1 className="text-2xl font-bold sm:text-3xl">{title}</h1>
+                    <p className="text-base text-gray-500 sm:text-lg">{date}</p>
                 </div>
                 <div>
-                    <p className="text-lg text-gray-500">{tech}</p>
+                    <p className="text-base text-gray-500 sm:text-lg">{tech}</p>
                 </div>
-                <p>{description}</p>
-                <ul className="list-disc pl-5 mt-4 space-y-1">
+                <p className="text-sm leading-7 text-slate-700 sm:text-base">{description}</p>
+                <ul className="list-disc pl-5 mt-4 space-y-2 text-sm sm:text-base">
                     {responsibilities.map((item, index) => (
                         <li key={index}>{item}</li>
                     ))}
                 </ul>
-                <div className="flex flex-col items-start gap-2">
-                    <a href={link} className="flex text-xl font-semibold gap-2 items-center"> Learn More <IoMdArrowDropright /> </a>
+                <div className="flex flex-col items-start gap-4">
+                    <a href={link} className="flex text-lg font-semibold gap-2 items-center sm:text-xl"> Learn More <IoMdArrowDropright /> </a>
                     {demoLink && (
-                        <a href={demoLink} className="flex text-xl font-semibold gap-2 items-center"> Watch Demo <IoMdArrowDropright /> </a>
+                        <a href={demoLink} className="flex text-lg font-semibold gap-2 items-center sm:text-xl"> Demo <IoMdArrowDropright /> </a>
                     )}
                 </div>
             </div>

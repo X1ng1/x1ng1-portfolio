@@ -5,15 +5,16 @@ export const projects = [
         tech: "Chrome Extension API, Javascript, Python, Hugging Face",
         image: "extension.png",
         link: "https://github.com/X1ng1/Manga-Translator-Extension",
-        description: `Manga Translation Extension is a Chrome extension with a
-        FastAPI backend that uses OCR and machine translation to translate Japanese manga
-        text and display English translations directly over the original panels.`,
+        description: `Manga Translation Extension is a Chrome extension that automatically translates
+         Japanese manga into English and displays the translations directly on the original panels.`,
         responsibilities: [
             `Architected a Python-based ML pipeline integrating Hugging Face models for Japanese
-            text detection, OCR, and machine translation, enabling automated English translations
-            of manga panels.`,
-            `Integrated a FastAPI backend with a Chrome extension to overlay translations directly 
-            onto manga pages while preserving the original layout.`
+             text detection, OCR, and machine translation, enabling automated English translations
+             of manga panels.`,
+            `Built benchmarks and tests to profile pipeline performance, using latency measurements
+             to iteratively experiment with and optimize the system architecture for improved throughput.`,
+            `Integrated a FastAPI backend with a Chrome extension to overlay translations directly
+             onto manga pages while preserving the original layout.`
         ]
     },
     {
@@ -30,8 +31,27 @@ export const projects = [
             `Designed UI wireframes to establish application layouts and user flows.`,
             `Refactored the frontend into reusable components, improving code maintainability
              and reducing duplication.`,
-            `Developed responsive interfaces that adapt seamlessly across mobile and desktop screen 
-            sizes.`
+            `Developed responsive interfaces that adapt seamlessly across mobile and desktop screen
+             sizes.`
+        ]
+    },
+    {
+        title: "MediaTracker",
+        date: "Apr 2026",
+        tech: "Python, CloudScraper, BeautifulSoup",
+        image: "mediatracker.png",
+        link: "https://github.com/X1ng1/MediaTracker",
+        demoLink: "https://canva.link/r5d6ty7uu9wzb8e",
+        description: `MediaTracker automates content tracking across multiple websites by scraping sources, 
+        detecting new releases, and extracting relevant information.`,
+        responsibilities: [
+            `Built a Python-based media tracker that scrapes release data from multiple manga/webtoon sources and
+             consolidates updates into JSON, including chapter numbers, release timestamps, and direct links to 
+            newly released chapters.`,
+            `Implemented a flexible data extraction pipeline supporting both HTML scraping and API integration
+             across sources such as Webtoon and MangaDex.`,
+            `Configured per-site selectors in a JSON file, so the same scraping function can handle different site
+             layouts by reading container/card/title/chapter/time/link rules from JSON.`
         ]
     },
     {
@@ -47,6 +67,7 @@ export const projects = [
             `Collaborated in an Agile development team using CI/CD and release workflows by
             setting up GitHub Action pipelines and automated testing with Jest across frontend
             and backend.`,
+            `Implemented`,
             `Engineered a Python ML model using scikit-learn to analyze patterns in user event history
             and predict optimal scheduling times, automating event creation and significantly enhancing
             user experience by reducing manual input.`,
@@ -61,11 +82,12 @@ export const projects = [
         demoLink: "https://memo-x1ng1.vercel.app/",
         description: `Developed a full-stack digital journaling web application designed to 
         help users track daily emotions and reflect on their experiences through an interactive
-        calendar interface for creating, editing, and organizing journal entries`,
+        calendar interface for creating, editing, and organizing journal entries.`,
         responsibilities: [
-            `Integrated HuggingFace ML model to automatically classify journal entries into 7
-            emotion categories with real-time sentiment analysis.`,
-            ``,
+            `Integrated Hugging Face emotion analysis into the journaling workflow, automatically classifying
+            journal entries by sentiment and enriching the experience with emotion-based insights.`,
+            `Designed a React/Vite frontend with interactive calendar navigation, recent-entry summaries, and
+            draggable stickers, improving engagement and visual personalization of journal entries.`,
             `Led backend development by designing normalized SQL schemas for calendar and event 
             entities, building REST APIs in Express, and implementing secure authentication using
             JWT and bcrypt.`
@@ -99,8 +121,8 @@ export const projects = [
         responsibilities: [
             `Designed and trained a Siamese neural network in PyTorch using triplet loss to learn 
             feature embeddings that preserve identity across make-up related appearance changes.`,
-            `Evaluated model performance using validation metrics such as accuracy, precision, recall,
-            and threshold optimization.`,
+            `Evaluated model performance using validation metrics such as accuracy, precision,
+             and threshold optimization.`,
             `Achieved 91.67% accuracy on facial recognition across 100+ faces with and without makeup.`
         ]
     },
