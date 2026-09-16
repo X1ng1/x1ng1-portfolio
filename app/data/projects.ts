@@ -20,7 +20,7 @@ export const projects = [
     {
         title: "Manglify",
         date: "Feb 2026 - May 2026",
-        tech: "React Native + Expo, FastAPI, Supabase, Hugging Face",
+        tech: "React Native + Expo, FastAPI, Supabase, Hugging Face, Docker",
         image: "manglify.png",
         link: "https://github.com/TonyLiu2004/Multimodal-Manga-Translator/tree/main",
         description: `Manglify is an AI-powered manga reader that translates Japanese
@@ -67,7 +67,7 @@ export const projects = [
             `Collaborated in an Agile development team using CI/CD and release workflows by
             setting up GitHub Action pipelines and automated testing with Jest across frontend
             and backend.`,
-            `Implemented`,
+            `Designed and implemented application layouts and user flows.`,
             `Engineered a Python ML model using scikit-learn to analyze patterns in user event history
             and predict optimal scheduling times, automating event creation and significantly enhancing
             user experience by reducing manual input.`,
@@ -89,14 +89,16 @@ export const projects = [
             `Designed a React/Vite frontend with interactive calendar navigation, recent-entry summaries, and
             draggable stickers, improving engagement and visual personalization of journal entries.`,
             `Led backend development by designing normalized SQL schemas for calendar and event 
-            entities, building REST APIs in Express, and implementing secure authentication using
-            JWT and bcrypt.`
+            entities, building REST APIs in Express.js, and implementing secure authentication using
+            JWT and bcrypt.`,
+            `Deployed the React frontend on Vercel and Express.js backend on Render, configuring production 
+            services to support the full-stack application.`
         ]
     },
     {
         title: "Stellar Search",
         date: "Oct 2025 - Nov 2025",
-        tech: "React, Python, Supabase, Gemini API",
+        tech: "React, Python, Supabase, Gemini API, Hugging Face",
         image: "stellar-search.png",
         link: "https://github.com/oleksiisud/slack-cluster-finder",
         description: `Stellar Search goes beyond standard keyword-based filtering used by Slack 
@@ -104,9 +106,9 @@ export const projects = [
         responsibilities: [
             `Designed and implemented a database schema for storing user accounts and clustered
             message data.`,
-            `Integrated authentication and data collection workflows for Slack and Discord so the
+            `Integrated OAuth and data collection workflows for Slack and Discord so the
             system can work with real workspace data.`,
-            `Deployed the backend and established CI/CD workflows to automate testing and 
+            `Deployed the backend using Hugging Face and established CI/CD workflows to automate testing and 
             application delivery.`
         ]
     },
